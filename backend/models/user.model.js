@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    username:{
+    userName:{
         type:String,
         required:true,
         unique:true,
@@ -24,7 +24,8 @@ const userSchema = new mongoose.Schema({
         type:String,
         default:"",
     },
-});
+},//createdAt,updatedAt => members since createdAt
+{timestamps:true});
 
 const User = mongoose.model("User",userSchema);
 export default User;

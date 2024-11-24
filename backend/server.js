@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 import authRoutes from "./route/auth.route.js";
+import messageRoutes from "./route/message.route.js";
 import connectToMongoDb from "./DB/connectToMongoDB.js";
 
 const app = express();
@@ -8,9 +10,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 dotenv.config();
+app.use(express.json());  //to parse the incomming requests with json payloads (from req.body)
+app.use(cookieParser());
 
 app.use("/api/auth",authRoutes);
-app.use(express.json());  //to parse the incomming requests with json payloads (from req.body)
+app.use("/api/message",messageRoutes);
 
 // app.get("/",(req,res)=>{
 //      // root route http://localhost:5000/
