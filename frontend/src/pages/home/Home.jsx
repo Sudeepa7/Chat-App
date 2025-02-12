@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidebar from '../../component/sidebar/Sidebar'
 
 const Home = () => {
   return (
-    <div className='w-full max-w-md mx-auto my-1 pt-12 bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100'>
+    <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+    <Sidebar/>
+    {/* <MessageContaier/> */}
     </div>
     
   )

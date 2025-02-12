@@ -11,7 +11,8 @@ const Login = () => {
 
 
         <div className='space-y-4 p-6 max-w-md mx-auto'>
-          <label className="input input-bordered flex items-center gap-2 bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100">
+
+          {/* <label className="input input-bordered flex items-center gap-2 bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -23,7 +24,8 @@ const Login = () => {
                 d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
             </svg>
             <input type="text" className="grow" placeholder="Email" />
-          </label>
+          </label> */}
+
           <label className="input input-bordered flex items-center gap-2  w-full bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,6 +37,7 @@ const Login = () => {
             </svg>
             <input type="text" className="grow" placeholder="Username" />
           </label>
+
           <label className="input input-bordered flex items-center gap-2 w-full bg-yellow-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +53,7 @@ const Login = () => {
           </label>
 
           <a href="#" className="font-thin mt-10 text-yellow-500 dark:text-yellow-650 hover:underline">Don't have a account</a>
-          <button className="btn w-full gap-2 py-1 max-w-md mx-auto bg-yellow-600 border border-gray-100 hover:bg-yellow-700">Responsive</button>
+          <button className="btn w-full gap-2 py-1 max-w-md mx-auto bg-yellow-600 border border-gray-100 hover:bg-yellow-700">Login</button>
 
         </div>
 
