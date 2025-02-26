@@ -1,7 +1,6 @@
 import React from 'react'
 import { RiLogoutBoxLine } from "react-icons/ri";
 
-
 const LogoutButton = () => {
   return (
     <div className='mt-auto'>
@@ -10,4 +9,4 @@ const LogoutButton = () => {
   )
 }
 
-export default LogoutButton
+export default LogoutButton 
