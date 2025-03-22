@@ -128,7 +128,7 @@ const SignUp = () => {
               className='btn w-full gap-2 py-1 max-w-md mx-auto bg-yellow-600 border border-gray-100 hover:bg-yellow-700'
               disabled={loading}
             >
-              {loading ? 'Signing up...' : 'Sign Up'}
+              {loading ? <span className='loading loading-spinner'></span> : 'Sign Up'}
             </button>
           </div>
         </form>
