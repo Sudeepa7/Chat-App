@@ -33,3 +33,14 @@ div {
   scrollbar-width: thin; /* Make the scrollbar thinner */
   scrollbar-color: #555 #2d2d2d; /* Thumb and track color */
 }
+
+.shake {
+  animation: shake 0.5s ease-in-out; /* Adjust duration and timing function as needed */
+}
+@keyframes shake {
+  0% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-5px) rotate(-2deg); }
+  50% { transform: translateX(5px) rotate(2deg); }
+  75% { transform: translateX(-5px) rotate(-2deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
